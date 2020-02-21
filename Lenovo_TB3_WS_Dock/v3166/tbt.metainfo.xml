@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2020 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.lenovo.ThinkPadTRDock.TBT.firmware</id>
+  <name>ThinkPad Thunderbolt 3 Workstation Dock</name>
+  <name_variant_suffix>Thunderbolt</name_variant_suffix>
+  <summary>Thunderbolt firmware for the ThinkPad Thunderbolt 3 Workstation Dock</summary>
+  <description>
+    <p>
+      Updating the firmware on your ThinkPad Thunderbolt 3 Workstation Dock
+      device adds new features and fixes known issues with the Thunderbolt
+      controller.
+    </p>
+  </description>
+  <provides>
+    <!-- TBT-01081720 -->
+    <firmware type="flashed">75039175-c354-5df9-a798-5da41461c007</firmware>
+  </provides>
+  <url type="homepage">https://support.lenovo.com/gb/en/solutions/pd500252</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Lenovo Inc.</developer_name>
+  <releases>
+    <release urgency="medium" version="50.00" date="2019-07-30">
+      <checksum filename="TRDOCK_5000.bin" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>FIXME</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <categories>
+    <category>X-ThunderboltController</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.intel.thunderbolt</value>
+    <value key="LVFS::VersionFormat">pair</value>
+  </custom>
+</component>

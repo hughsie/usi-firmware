@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2020 Richard Hughes <richard@hughsie.com> -->
+<component priority="1" type="firmware">
+  <id>com.lenovo.ThinkPadTRDock.tier1.firmware</id>
+  <name>ThinkPad Thunderbolt 3 Workstation Dock</name>
+  <name_variant_suffix>USB Hub Tier 1</name_variant_suffix>
+  <summary>USB controller firmware for the ThinkPad Thunderbolt 3 Workstation Dock</summary>
+  <description>
+    <p>
+      Updating the firmware on your dock improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_17EF&PID_307F&HUB_0002 -->
+    <firmware type="flashed">a9866465-e1ec-5ce0-855d-162d817aeca2</firmware>
+  </provides>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <url type="homepage">https://www.lenovo.com/us/en/accessories-and-monitors/docking/c/docking</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Lenovo</developer_name>
+  <releases>
+    <release urgency="medium" version="51.13" date="2020-02-04">
+      <checksum filename="TR_Dock_Tier1_VL820Q7_FW5113.bin" target="content"/>
+      <description>
+        <p>
+          New features and enhancements:
+        </p>
+        <ul>
+          <li>I don't know what to put here!</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <requires>
+    <!-- only newer versions of fwupd add the HUB_XXXX ID -->
+    <id compare="ge" version="1.3.8">org.freedesktop.fwupd</id>
+  </requires>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.vli.usbhub</value>
+    <value key="LVFS::VersionFormat">bcd</value>
+  </custom>
+</component>
