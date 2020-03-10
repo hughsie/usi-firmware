@@ -16,7 +16,7 @@
     <!-- TBT-01081720 -->
     <firmware type="flashed">75039175-c354-5df9-a798-5da41461c007</firmware>
   </provides>
-  <url type="homepage">https://support.lenovo.com/gb/en/solutions/pd500252</url>
+  <url type="homepage">https://www.lenovo.com/support/docks</url>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Proprietary</project_license>
   <developer_name>Lenovo Inc.</developer_name>
