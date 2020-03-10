@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019-2020 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.lenovo.ThinkPadTRDock.Mcu.firmware</id>
+  <name>ThinkPad Thunderbolt 3 Workstation Dock</name>
+  <name_variant_suffix>MCU</name_variant_suffix>
+  <summary>MCU firmware for the ThinkPad Thunderbolt 3 Workstation Dock</summary>
+  <description>
+    <p>
+      Updating the firmware on your ThinkPad Thunderbolt 3 Workstation Dock
+      fixes known issues with the MCU device.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_17EF&PID_307F&I2C_MSP430 -->
+    <firmware type="flashed">7a810ce4-928e-5a4a-b0cd-564f46cfe3a7</firmware>
+  </provides>
+  <url type="homepage">https://www.lenovo.com/support/docks</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Lenovo Inc.</developer_name>
+  <releases>
+    <release urgency="medium" version="0.29">
+      <checksum filename="fr2033_app_v0.29_OneClick.hex" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>FIXME</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <requires>
+    <!-- only newer versions of fwupd add the I2C_XXXX ID -->
+    <id compare="ge" version="1.3.8">org.freedesktop.fwupd</id>
+  </requires>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.vli.usbhub</value>
+    <value key="LVFS::VersionFormat">bcd</value>
+  </custom>
+</component>

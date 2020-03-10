@@ -11,11 +11,10 @@ FIRMWARE_FILE=\
 METAINFO_FILE=\
 	audio.metainfo.xml \
 	dp_hub.metainfo.xml \
+	mcu.metainfo.xml \
 	tbt.metainfo.xml \
 	usbhub_tier1.metainfo.xml \
 	usbhub_tier2.metainfo.xml
-
-#FIXME: mcu.metainfo.xml is missing as it's not yet installable
 
 all: $(VENDOR)-$(PROJECT_NAME)-v$(VERSION).cab
 
