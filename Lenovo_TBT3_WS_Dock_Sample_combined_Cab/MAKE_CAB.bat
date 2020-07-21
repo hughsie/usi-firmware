@@ -1,0 +1,1 @@
+makecab /F MakeCAB_directives.txt /D CabinetNameTemplate=File_Name.cab /D DiskDirectoryTemplate= /D MaxDiskSize=2048000000

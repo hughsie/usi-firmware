@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>com.lenovo.ThinkPadProDock.MST.firmware</id>
+  <name>ThinkPad Pro Workstation Dock (SynapticsMST)</name>
+  <summary>SynapticsMST firmware for the ThinkPad Pro Workstation Dock</summary>
+  <description>
+    <p>5.04.
+      Updating the firmware on your ThinkPad Thunderbolt Pro Workstation Dock
+      device adds new features and fixes known issues with the Synaptics
+      Multi-Stream Transport Device.
+    </p>
+  </description>
+  <provides>
+    <!-- MST-panamera-vmm5322-595 -->
+    <firmware type="flashed">c083122a-aae0-5ce2-9f80-c65a1aa1151b</firmware>
+  </provides>
+  <url type="homepage">https://pcsupport.lenovo.com/gb/en/products/ACCESSORY/DOCKS/THINKPAD-PRO-DOCKING-STATION</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Lenovo Ltd.</developer_name>
+  <releases>
+    <release urgency="medium" version="5.04.000" date="2019-10-15">
+      <checksum filename="Panamera_fw_cs18_ultra_Ver5_04_000.fullrom" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Show version correctly</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <keywords>
+    <keyword>synaptics</keyword>
+  </keywords>
+  <requires>
+    <id compare="ge" version="1.2.11">org.freedesktop.fwupd</id>
+  </requires>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.synaptics.mst</value>
+    <value key="LVFS::VersionFormat">triplet</value>
+  </custom>
+</component>
