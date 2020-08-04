@@ -19,7 +19,7 @@
   <project_license>Proprietary</project_license>
   <developer_name>Lenovo Ltd.</developer_name>
   <releases>
-    <release urgency="medium" version="5.04.000" date="2019-10-15">
+    <release urgency="medium" version="5.4.0" date="2019-10-15">
       <checksum filename="Panamera_fw_cs18_ultra_Ver5_04_000.fullrom" target="content"/>
       <description>
         <p>
